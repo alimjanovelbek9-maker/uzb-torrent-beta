@@ -1,0 +1,139 @@
+
+body{
+ 
+background: #2c4514;
+background: linear-gradient(90deg, rgba(44, 69, 20, 1) 14%, rgba(12, 87, 45, 1) 52%, rgba(109, 171, 58, 1) 100%);}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px;
+  
+}
+
+.card{
+    text-align: center;
+   width: 300px;
+   height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: scale(1.10);
+}
+.card button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(1, 145, 1);
+transition: 0.5s;
+}
+.card button:hover{
+    transform: scale(1.10);
+}
+.card a{
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.card img{
+    max-width: 300px;
+    max-height: 150px;
+    padding: 20px;
+}
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+header nav {
+    gap: 50px  ;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+header button{
+    margin-left: 100px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(0, 60, 128);
+    transition: 0.5s;
+    color: white;
+    
+}
+header button:hover{
+    transform: scale(1.10);
+}
+header button a{
+    color: white;
+    text-decoration: none;
+    
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+header input{
+    transition: 0.5s;
+    width: 450px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+}
+header input:hover{
+    transform: scale(1.10);
+}
+
+
+@media (max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card h5,
+  .card p {
+    font-size: 13px;
+  }
+}
